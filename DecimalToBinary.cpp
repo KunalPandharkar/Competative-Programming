@@ -21,13 +21,23 @@ int main()
 {
     int n;
     cin >> n;
-    
+
     // using inbuilt bitset container
     // string binary = bitset<32>(n).to_string();
     // int find = binary.find('1');
     // if(find != string::npos)
     // binary.erase(binary.begin(),binary.begin() + find);
     // cout << binary << endl;
+
+    // using bitwise &
+    // string binary;
+    // while (n > 0)
+    // {
+    //     binary.push_back((char)(n & 1) + '0');
+    //     n = n >> 1;
+    // }
+    // reverse(binary.begin(), binary.end());
+    // cout << binary;
 
     cout << decimalTobinary(n);
 }
